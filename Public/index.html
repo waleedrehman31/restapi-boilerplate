@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
+      crossorigin="anonymous"
+    />
+    <title>NodeJS and Express REST API</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="m-5 center">NodeJS and Express REST API example</h1>
+      <div class="container">
+        <h2 class="m-5">Book List</h2>
+        <div class="row" id="books"></div>
+      </div>
+      <form action="http://localhost:5050/book" method="post">
+        <div class="form-group">
+          <label for="bookName">Book Name</label>
+          <input type="text" class="form-control" name="bookName" id="title" />
+        </div>
+
+        <div class="form-group">
+          <label for="ISBN">ISBN</label>
+          <input type="number" class="form-control" name="ISBN" id="ISBN" />
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          <input type="text" class="form-control" name="author" id="author" />
+        </div>
+
+        <div class="form-group">
+          <label for="publishDate">Publish Date</label>
+          <input
+            type="date"
+            class="form-control"
+            name="publishDate"
+            id="date"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="publisher">Publisher</label>
+          <input
+            type="text"
+            class="form-control"
+            name="publisher"
+            id="publisher"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="numOfPages">Page Numbes</label>
+          <input
+            type="number"
+            class="form-control"
+            name="numOfPages"
+            id="numOfPages"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
